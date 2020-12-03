@@ -12,14 +12,10 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 from pathlib import Path
 import os
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
-
-STATICFILES_DIRS = (
-	os.path.join(PROJECT_ROOT, 'static'),
-)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -46,8 +42,11 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -64,6 +63,7 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                'django.template.context_processors.i18n',
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
@@ -111,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -125,15 +125,29 @@ LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
 
+LANGUAGES = (
+    ('en', 'English'),
+    ('fr', 'French'),
+    ('ko', 'Korean'),
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
-MEDIA_URL = '/assets/img/'
 
-STATICFILES_DIR = [
-    os.path.join(BASE_DIR, 'static')
-]
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/assets/img')
+STATIC_URL = '/static/'
+MEDIA_URL = '/images/'
+STATICFILES_DIRS = (
+	os.path.join(BASE_DIR, 'static'),
+)
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'ycjangkr@gmail.com'
+EMAIL_HOST_PASSWORD = 'kdudaeyddwhrnmkz'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

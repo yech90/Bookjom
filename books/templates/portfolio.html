@@ -1,0 +1,41 @@
+{% load static %}
+{% load i18n %}
+
+<!-- Modal 1-->
+{% for portfolio in portfolios %}
+<div class="portfolio-modal modal fade" id="goto{{portfolio.id}}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="{% static 'images/close-icon.svg' %}" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">{{portfolio.title}}</h2>
+                            <p class="item-intro text-muted">{{portfolio.label}}</p>
+                            <img class="img-fluid d-block mx-auto" src="{{portfolio.main_pic.url}}" alt="" />
+                            <p>{{portfolio.main_detail}}</p>
+                            {% if portfolio.second_pic %}
+                            <img class="img-fluid d-block mx-auto" src="{{portfolio.second_pic.url}}" alt="" />
+                            <p>{{portfolio.second_detail}}</p>
+                            {% endif %}                            
+                            <ul class="list-inline">
+                                <!--
+                                <li>Date: January 2020</li>
+                                <li>Client: Threads</li>
+                                <li>Category: Illustration</li>
+                                -->
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

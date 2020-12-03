@@ -4,33 +4,34 @@
  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <li class="container">
        <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="{% static 'assets/img/navbar-logo.svg' %}" alt="" /></a>-->
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><p>Yech's Portfolio</p></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><p>YECH'S</p></a>
+
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars ml-1"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ml-auto">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">{% trans 'Services' %}</a></li>-->
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">{% trans 'Portfolio' %}</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">{% trans 'About me' %}</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">{% trans 'Curriculum' %}</a></li>                
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">{% trans 'Contact' %}</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Language</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" data-mode="francais"><span class="flag-icon flag-icon-fr"></span>  French</a></li>
-                            <li><a class="dropdown-item" href="#" data-mode="english"><span class="flag-icon flag-icon-us"></span>  English</a></li>
-                            <li><a class="dropdown-item" href="#" data-mode="korea"><span class="flag-icon flag-icon-kr"></span>  korean</a></li>
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">{% trans 'Language' %}</a>
+                        <ul class="dropdown-menu" >
+                            <li><div data-lang="francais" class="language-set"><a class="dropdown-item" href="{% url 'set_language_from_url' user_language='fr' %}"><span class="flag-icon flag-icon-fr"></span>  {% trans 'French' %} </a></div></li>
+                            <li><div data-lang="english" class="language-set"><a class="dropdown-item" href="{% url 'set_language_from_url' user_language='en' %}"><span class="flag-icon flag-icon-us"></span>  {% trans 'English' %} </a></div></li>
+                            <li><div data-lang="korean" class="language-set"><a class="dropdown-item" href="{% url 'set_language_from_url' user_language='ko' %}"><span class="flag-icon flag-icon-kr"></span>  {% trans 'korean' %} </a></div></li>
                         </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Themes</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">{% trans 'Themes' %}</a>
                         <ul class="dropdown-menu w-20">
-                            <li><a class="dropdown-item" ><div data-mode="yellow" id="light-mode" class="theme-dot"></div></a></li>
-                            <li><a class="dropdown-item"><div data-mode="blue" id="blue-mode" class="theme-dot"></div></a></li>
-                            <li><a class="dropdown-item"><div data-mode="green" id="green-mode" class="theme-dot"></div></a></li>
-                            <li><a class="dropdown-item"><div data-mode="purple" id="purple-mode" class="theme-dot"></div></a></li>
+                            <li><a class="dropdown-item" onclick="setColor(yellow)"><div data-mode="yellow" id="light-mode" class="theme-dot" ></div></a></li>
+                            <!--<li><a class="dropdown-item" onclick="setColor(blue)"><div data-mode="blue" id="blue-mode" class="theme-dot" ></div></a></li>-->
+                            <li><a class="dropdown-item" onclick="setColor(green)"><div data-mode="green" id="green-mode" class="theme-dot" ></div></a></li>
+                            <li><a class="dropdown-item" onclick="setColor(purple)"><div data-mode="purple" id="purple-mode" class="theme-dot"></div></a></li>
                         </ul>
                 </li>
             </ul>
@@ -41,15 +42,10 @@
  <!-- Masthead-->
 <header class="masthead" id="masthead-bg">
     <div class="container">
-        <div class="masthead-heading">Looking for a Developer?</div>
-        <div class="masthead-subheading">Front-end to Back-end, you can have everything</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        <div class="masthead-heading">{% trans 'JANG Yechan' %}</div>
+        <div class="masthead-subheading">{% trans 'Yes, you can buy happiness ... if you spend it to save time' %}</div>
+        <br>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">{% trans 'Tell Me More' %}</a>
 
-        <!--<div id="theme-options-wrapper">
-            <div data-mode="yellow" id="light-mode" class="theme-dot"></div>
-            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-            <div data-mode="green" id="green-mode" class="theme-dot"></div>
-            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-        </div>-->
     </div>
 </header>

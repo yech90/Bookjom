@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-03 23:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\books\templates\contact.html:8
+msgid "Contact Me"
+msgstr "Contactez moi"
+
+#: .\books\templates\contact.html:9
+msgid "For any questions do not hesitate to contact me"
+msgstr "Pour plus de question, n'hesitez pas a me contacter"
+
+#: .\books\templates\contact.html:16
+msgid "Please enter your name."
+msgstr "Entrer votre nom."
+
+#: .\books\templates\contact.html:20
+msgid "Please enter your email address."
+msgstr "Entrer votre adresse mail"
+
+#: .\books\templates\contact.html:24
+msgid "Please enter your phone number."
+msgstr "Entrer votre numero de telephone"
+
+#: .\books\templates\contact.html:30
+msgid "Please enter a message."
+msgstr "Entrer un message"
+
+#: .\books\templates\contact.html:37
+msgid "Send Message"
+msgstr "Envoyer un message"
+
+#: .\books\templates\index.html:36
+msgid "MY SERVICES"
+msgstr "MES SERVICES"
+
+#: .\books\templates\index.html:46
+msgid "Website"
+msgstr "Site Web"
+
+#: .\books\templates\index.html:47
+msgid "Advertise your business worldwide"
+msgstr "Faites la promotion de votre entreprise dans le monde entier"
+
+#: .\books\templates\index.html:55
+msgid "E-Commerce"
+msgstr "Commerce en ligne"
+
+#: .\books\templates\index.html:56
+msgid "Still selling offline ?"
+msgstr "Vous vendez toujours hors ligne?"
+
+#: .\books\templates\index.html:56
+msgid "Time to sell your product online"
+msgstr "Il est temps de vendre en ligne"
+
+#: .\books\templates\index.html:64
+msgid "Others"
+msgstr "Autres"
+
+#: .\books\templates\index.html:65
+msgid "Customize your needs"
+msgstr "Personnalisez vos besoins"
+
+#: .\books\templates\index.html:74 .\books\templates\navbar.html:16
+msgid "Portfolio"
+msgstr "Réalisations"
+
+#: .\books\templates\index.html:75
+msgid "More portfolios and projects to come"
+msgstr "Plus de réalisations et projets en cours"
+
+#: .\books\templates\index.html:104 .\books\templates\navbar.html:17
+msgid "About me"
+msgstr "A propos de moi"
+
+#: .\books\templates\index.html:105
+msgid "Curious, Motivated, Goal oriented"
+msgstr "Curieux, Motivé, Orienté vers un objectif "
+
+#: .\books\templates\index.html:111
+msgid "Yechan JANG"
+msgstr "Yechan JANG"
+
+#: .\books\templates\index.html:112
+msgid "Fullstack Developer"
+msgstr "Développeur FullStack"
+
+#: .\books\templates\index.html:125
+msgid "Professional Experiences"
+msgstr "Expériences professionnelles"
+
+#: .\books\templates\index.html:126
+msgid "Actually working as freelancer as well"
+msgstr "Travail aussi en tant que indépendant"
+
+#: .\books\templates\index.html:133
+msgid "Credit Agricole Corporate Investment Bank"
+msgstr "Banque d'investissement Crédit Agricole"
+
+#: .\books\templates\index.html:134
+msgid "October 2020 - Today"
+msgstr "Octobre 2020 - Aujourd'hui"
+
+#: .\books\templates\index.html:136
+msgid ""
+"Working on back office booking platform of Equities, options, Forex"
+msgstr "Travail en Back Office sur l'application de booking des actions, options, Forex"
+
+#: .\books\templates\index.html:143
+msgid "BNP Paribas Corporte Investment Bank"
+msgstr "Banque d'investissement BNP paribas"
+
+#: .\books\templates\index.html:144
+msgid "January 2018 - July 2020"
+msgstr "Janvier 2018 - Juillet 2020"
+
+#: .\books\templates\index.html:146
+msgid ""
+"Worked on back office booking platform of Hedge/Mutual funds, Private Equity "
+"Real Estate  "
+msgstr "Travaillé en Back Office sur l'application de booking des Hedge/Mutual Fund, Private Equity"
+
+#: .\books\templates\index.html:153
+msgid "Markany"
+msgstr "Markany"
+
+#: .\books\templates\index.html:154
+msgid "October 2014 - November 2017"
+msgstr "Octobre 2014 - Novembre 2017"
+
+#: .\books\templates\index.html:156
+msgid "Worked on security application/system based on Hooking and Injection"
+msgstr "Travaillé sur une application/système de sécurité basé sur les technologies de Hooking et Injection"
+
+#: .\books\templates\index.html:163
+msgid "Orange"
+msgstr "Orange"
+
+#: .\books\templates\index.html:164
+msgid "July 2012 - September 2014"
+msgstr "Juillet 2012 - Septembre 2014"
+
+#: .\books\templates\index.html:166
+msgid ""
+"Worked on network monitoring tool and fast paced network equipment bulk "
+"setting tool"
+msgstr "Travaillé sur un outil de surveillance en masse d'équipements réseaux "
+
+#: .\books\templates\navbar.html:15
+msgid "Services"
+msgstr "Services"
+
+#: .\books\templates\navbar.html:18
+msgid "Curriculum"
+msgstr "Curriculum"
+
+#: .\books\templates\navbar.html:19
+msgid "Contact"
+msgstr "Contacts"
+
+#: .\books\templates\navbar.html:21
+msgid "Language"
+msgstr "Langages"
+
+#: .\books\templates\navbar.html:23
+msgid "French"
+msgstr "Francais"
+
+#: .\books\templates\navbar.html:24
+msgid "English"
+msgstr "Anglais"
+
+#: .\books\templates\navbar.html:25
+msgid "korean"
+msgstr "Coréen"
+
+#: .\books\templates\navbar.html:29
+msgid "Themes"
+msgstr "Thèmes"
+
+#: .\books\templates\navbar.html:45
+msgid "JANG Yechan"
+msgstr "JANG Yechan"
+
+#: .\books\templates\navbar.html:46
+msgid "Yes, you can buy happiness ... if you spend it to save time"
+msgstr "Oui, vous pouvez acheter du bonheur ... si vous le dépensez pour gagner du temps"
+
+#: .\books\templates\navbar.html:48
+msgid "Tell Me More"
+msgstr "En savoir plus"
