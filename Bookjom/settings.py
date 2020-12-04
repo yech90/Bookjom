@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'tof',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -130,6 +131,9 @@ LANGUAGES = (
     ('fr', 'French'),
     ('ko', 'Korean'),
 )
+DEFAULT_FILTER_LANGUAGE = [
+    'en','fr','ko'
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/

@@ -10054,7 +10054,7 @@ img::-moz-selection {
 }
 
 .img-size-my {
-  height: 250px;
+  height: 200px;
   width: 100%;
   background-size:cover;
   background-position: center;
@@ -10463,7 +10463,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("../images/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }

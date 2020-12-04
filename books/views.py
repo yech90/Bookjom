@@ -14,12 +14,6 @@ logger = logging.getLogger(__name__)
 
 def showBooks(request):
     portfolios = Portfolio.objects.all()
-    for portfolio in portfolios:
-        portfolio.title=_(portfolio.title)
-        portfolio.label=_(portfolio.label)
-        portfolio.main_detail=_(portfolio.main_detail)
-        portfolio.second_detail=_(portfolio.second_detail)
-        
     return render(request, 'index.html', {'portfolios':portfolios})
 
 def set_language_from_url(request, user_language):

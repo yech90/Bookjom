@@ -14,11 +14,13 @@
                             <!-- Project Details Go Here-->
                             <h2 class="text-uppercase">{{portfolio.title}}</h2>
                             <p class="item-intro text-muted">{{portfolio.label}}</p>
-                            <img class="img-fluid d-block mx-auto" src="{{portfolio.main_pic.url}}" alt="" />
-                            <p>{{portfolio.main_detail}}</p>
+                            {% if portfolio.main_pic %}
+                                <img class="img-fluid d-block mx-auto" src="{{portfolio.main_pic.url}}" alt="" />
+                                <p>{{portfolio.main_detail}}</p>
+                            {% endif %}
                             {% if portfolio.second_pic %}
-                            <img class="img-fluid d-block mx-auto" src="{{portfolio.second_pic.url}}" alt="" />
-                            <p>{{portfolio.second_detail}}</p>
+                                <img class="img-fluid d-block mx-auto" src="{{portfolio.second_pic.url}}" alt="" />
+                                <p>{{portfolio.second_detail}}</p>
                             {% endif %}                            
                             <ul class="list-inline">
                                 <!--

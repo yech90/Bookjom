@@ -22,7 +22,7 @@ from django.conf import settings
 urlpatterns = i18n_patterns(
     path('admin/', admin.site.urls),
     path('', include('books.urls')),
-    prefix_default_language=False,
+    #prefix_default_language=False,
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

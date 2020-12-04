@@ -83,7 +83,9 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
+                                {% if portfolio.main_pic %}
                                 <img class="img-fluid img-size-my" src="{{portfolio.main_pic.url}}" alt="" />
+                                {% endif %}
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">{{portfolio.title}}</div>
@@ -107,7 +109,7 @@
                   <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
                         <div class="team-member" >
-                            <img class="mx-auto rounded-circle" src="{% static 'images/team/yech_profile.jpg' %}" alt="" />
+                            <img class="mx-auto rounded-circle" src="{% static 'images/team/yech_profile.JPG' %}" alt="" />
                             <h4>{% trans 'Yechan JANG' %}</h4>
                             <p class="text-muted">{% trans 'Fullstack Developer' %}</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/YechanJang"><i class="fab fa-twitter"></i></a>
@@ -123,47 +125,47 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">{% trans 'Professional Experiences' %}</h2>
-                    <h3 class="section-subheading text-muted">{% trans 'Actually working as freelancer as well' %}</h3>
+                    <h3 class="section-subheading text-muted">{% trans 'Working as freelancer' %}</h3>
                 </div>
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'images/about/cacib_main.jpg' %}" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="subheading">{% trans 'Credit Agricole Corporate Investment Bank' %}</h4>
+                                <h4 class="subheading">{% trans 'Credit Agricole Corporate Investment Bank / Paris, France' %}</h4>
                                 <h6>{% trans 'October 2020 - Today' %}</h6>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">{% trans 'Working on back office booking platform of Equities (stock, options, Forex)' %}</p></div>
+                            <div class="timeline-body"><p class="text-muted">{% trans 'Working on back office Equities booking platform (stock, options, Forex)' %}</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'images/about/bpcib_main.jpg' %}" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="subheading">{% trans 'BNP Paribas Corporte Investment Bank' %}</h4>
+                                <h4 class="subheading">{% trans 'BNP Paribas Corporte Investment Bank / Paris, France' %}</h4>
                                 <h6>{% trans 'January 2018 - July 2020' %}</h6>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">{% trans 'Worked on back office booking platform of Hedge/Mutual funds, Private Equity Real Estate  ' %}</p></div>
+                            <div class="timeline-body"><p class="text-muted">{% trans 'Worked on back office Hedge/Mutual funds, Private Equity Real Estate booking platform ' %}</p></div>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'images/about/markany_main.jpg' %}" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="subheading">{% trans 'Markany' %}</h4>
+                                <h4 class="subheading">{% trans 'Markany / Seoul, South Korea' %}</h4>
                                 <h6>{% trans 'October 2014 - November 2017' %}</h6>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">{% trans 'Worked on security application/system based on Hooking and Injection' %} </p></div>
+                            <div class="timeline-body"><p class="text-muted">{% trans 'Worked on security Digital Right Management / Data Loss Prevention Software' %} </p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'images/about/orange_main.jpg' %}" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="subheading">{% trans 'Orange' %}</h4>
+                                <h4 class="subheading">{% trans 'Orange / Toulouse, France' %}</h4>
                                 <h6>{% trans 'July 2012 - September 2014' %}</h6>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">{% trans 'Worked on network monitoring tool and fast paced network equipment bulk setting tool' %}</p></div>
+                            <div class="timeline-body"><p class="text-muted">{% trans 'Worked on network monitoring tool and network equipment bulk setting tool' %}</p></div>
                         </div>
                     </li>
                 </ul>
