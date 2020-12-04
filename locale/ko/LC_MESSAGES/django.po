@@ -47,8 +47,6 @@ msgid "Contact Me"
 msgstr "문의하기"
 
 #: .\books\templates\contact.html:9
-#, fuzzy
-#| msgid "For any questions do not hesitate to contact me"
 msgid "For any questions about anything do not hesitate to contact me"
 msgstr "작업 제안, 문의사항 등이 있으시면 언제든지 메세지를 남겨주세요."
 
@@ -133,8 +131,6 @@ msgid "Professional Experiences"
 msgstr "경력"
 
 #: .\books\templates\index.html:128
-#, fuzzy
-#| msgid "Actually working as freelancer as well"
 msgid "Working as freelancer"
 msgstr "프리랜서를 겸하는 현직 풀 스텍 개발자"
 

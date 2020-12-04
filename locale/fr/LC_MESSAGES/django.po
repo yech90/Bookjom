@@ -47,8 +47,6 @@ msgid "Contact Me"
 msgstr "Contactez moi"
 
 #: .\books\templates\contact.html:9
-#, fuzzy
-#| msgid "For any questions do not hesitate to contact me"
 msgid "For any questions about anything do not hesitate to contact me"
 msgstr "Pour plus de question, n'hesitez pas a me contacter"
 
@@ -133,8 +131,6 @@ msgid "Professional Experiences"
 msgstr "Expériences professionnelles"
 
 #: .\books\templates\index.html:128
-#, fuzzy
-#| msgid "Actually working as freelancer as well"
 msgid "Working as freelancer"
 msgstr "Travail aussi en tant que indépendant"
 
@@ -147,8 +143,6 @@ msgid "October 2020 - Today"
 msgstr "Octobre 2020 - Aujourd'hui"
 
 #: .\books\templates\index.html:138
-#, fuzzy
-#| msgid "Working on back office booking platform of Equities, options, Forex"
 msgid ""
 "Working on back office Equities booking platform (stock, options, Forex)"
 msgstr ""
@@ -164,10 +158,6 @@ msgid "January 2018 - July 2020"
 msgstr "Janvier 2018 - Juillet 2020"
 
 #: .\books\templates\index.html:148
-#, fuzzy
-#| msgid ""
-#| "Worked on back office booking platform of Hedge/Mutual funds, Private "
-#| "Equity Real Estate  "
 msgid ""
 "Worked on back office Hedge/Mutual funds, Private Equity Real Estate booking "
 "platform "
@@ -199,10 +189,6 @@ msgid "July 2012 - September 2014"
 msgstr "Juillet 2012 - Septembre 2014"
 
 #: .\books\templates\index.html:168
-#, fuzzy
-#| msgid ""
-#| "Worked on network monitoring tool and fast paced network equipment bulk "
-#| "setting tool"
 msgid ""
 "Worked on network monitoring tool and network equipment bulk setting tool"
 msgstr "Travaillé sur un outil de surveillance en masse d'équipements réseaux "
